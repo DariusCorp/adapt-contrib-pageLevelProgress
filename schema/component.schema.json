@@ -10,17 +10,17 @@
       "properties": {
         "_pageLevelProgress": {
           "type": "object",
-          "title": "Page Level Progress",
+          "title": "Progres la nivel de pagină",
           "default": {},
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Page Level Progress",
+              "title": "Activați progresul la nivel de pagină",
               "default": true
             },
             "_isCompletionIndicatorEnabled": {
               "type": "boolean",
-              "title": "Show inline completion indicator",
+              "title": "Afișați indicatorul de finalizare în linie",
               "default": false
             }
           }

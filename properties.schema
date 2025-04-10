@@ -7,7 +7,7 @@
     "pageLevelProgress": {
       "type": "string",
       "required": true,
-      "default": "List of page sections and completion status. Select incomplete sections to jump directly to the content.",
+      "default": "Listă de secțiuni ale paginii și starea de completare. Selectați secțiunile incomplete pentru a sări direct la conținut.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,7 +15,7 @@
     "pageLevelProgressIndicatorBar": {
       "type": "string",
       "required": true,
-      "default": "Page progress. {{percentageComplete}}%. Open page sections.",
+      "default": "Progresul paginii. {{percentageComplete}}%. Deschideți secțiunile paginii.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -23,7 +23,7 @@
     "pageLevelProgressMenuBar": {
       "type": "string",
       "required": true,
-      "default": "Page completion {{percentageComplete}}%",
+      "default": "Completarea paginii {{percentageComplete}}%",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -31,7 +31,7 @@
     "optionalContent": {
       "type": "string",
       "required": true,
-      "default": "Optional content",
+      "default": "Conținut opțional",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -39,28 +39,28 @@
     "_navOrder": {
       "type": "number",
       "required": true,
-      "title": "Navigation bar order",
-      "help": "Determines the order in which the page level progress is displayed in the navigation bar. Negative numbers (e.g. -100) are left-aligned. Positive numbers (e.g. 100) are right-aligned.",
+      "title": "Ordinea în bara de navigare",
+      "help": "Determină ordinea în care progresul la nivel de pagină este afișat în bara de navigare. Numerele negative (de ex. -100) sunt aliniate la stânga. Numerele pozitive (de ex. 100) sunt aliniate la dreapta.",
       "default": 90,
       "inputType": "Text",
       "validators": []
     },
     "_navTooltip": {
       "type": "object",
-      "title": "Page Level Progress navigation tooltip",
+      "title": "Tooltip pentru navigare progres la nivel de pagină",
       "properties": {
         "_isEnabled": {
           "type": "boolean",
           "default": true,
-          "title": "Enable tooltip for navigation button",
+          "title": "Activează tooltip pentru butonul de navigare",
           "inputType": "Checkbox",
           "validators": []
         },
         "text": {
           "type": "string",
           "title": "",
-          "default": "Page progress",
-          "help": "The tooltip text to display on hover over this item",
+          "default": "Progresul paginii",
+          "help": "Textul tooltip-ului afișat la trecerea cursorului peste acest element",
           "inputType": "Text",
           "validators": [],
           "translatable": true
@@ -71,16 +71,16 @@
       "type": "boolean",
       "required": true,
       "default": true,
-      "title": "Enable navigation bar button label",
+      "title": "Activează eticheta butonului din bara de navigare",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "Controls whether a label is shown on the navigation bar button."
+      "help": "Controlează dacă o etichetă este afișată pe butonul din bara de navigare."
     },
     "navLabel": {
       "type": "string",
       "required": true,
-      "default": "Page progress",
-      "title": "Navigation bar button label",
+      "default": "Progresul paginii",
+      "title": "Eticheta butonului din bara de navigare",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -89,8 +89,8 @@
       "type": "string",
       "required": true,
       "default": "auto",
-      "title": "Drawer position",
-      "help": "Determines the starting position of the drawer to open.",
+      "title": "Poziția sertarului",
+      "help": "Determină poziția de pornire a sertarului pentru deschidere.",
       "inputType": {
         "type": "Select",
         "options": [
@@ -116,23 +116,23 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progres la nivel de pagină",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Este activat",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is enabled or disabled."
+                  "help": "Controlează dacă extensia Progres la Nivel de Pagină este activată sau dezactivată."
                 },
                 "title": {
                   "type": "string",
                   "required": true,
                   "default": "",
-                  "title": "Alternate title",
-                  "help": "Alternate title to display for the course",
+                  "title": "Titlu alternativ",
+                  "help": "Titlu alternativ de afișat pentru curs",
                   "inputType": "Text",
                   "validators": [],
                   "translatable": true
@@ -141,46 +141,46 @@
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show page completion",
+                  "title": "Afișează completarea paginii",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "When enabled, the overall course progress will be calculated for all components. When disabled, only components that are set to be displayed in Page Level Progress will be included in the calculations. Defaults to enabled."
+                  "help": "Când este activat, progresul general al cursului va fi calculat pentru toate componentele. Când este dezactivat, doar componentele setate să fie afișate în Progresul la Nivel de Pagină vor fi incluse în calcule. Implicit este activat."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show course completion indicator",
+                  "title": "Afișează indicatorul de completare al cursului",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the course title."
+                  "help": "Controlează dacă indicatorul de completare este afișat lângă titlul cursului."
                 },
                 "_isShownInNavigationBar": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show progress in the navigation bar",
+                  "title": "Afișează progresul în bara de navigare",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows in the navigation bar"
+                  "help": "Controlează dacă indicatorul de completare este afișat în bara de navigare"
                 },
                 "_showAtCourseLevel": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Display all content objects and the current page components",
+                  "title": "Afișează toate obiectele de conținut și componentele paginii curente",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether to display all content objects and the current page components together, or just the current page components."
+                  "help": "Controlează dacă să afișeze toate obiectele de conținut și componentele paginii curente împreună sau doar componentele paginii curente."
                 },
                 "_useCourseProgressInNavigationButton": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Use course-level progress on navigation button",
+                  "title": "Utilizează progresul la nivel de curs pe butonul de navigare",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "When enabled, the navigation button will show course-level progress rather than page-level progress. Defaults to disabled."
+                  "help": "Când este activat, butonul de navigare va afișa progresul la nivel de curs în loc de progresul la nivel de pagină. Implicit este dezactivat."
                 }
               }
             }
@@ -192,43 +192,43 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progres la nivel de pagină",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Este activat",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is enabled or disabled for this page."
+                  "help": "Controlează dacă extensia Progres la Nivel de Pagină este activată sau dezactivată pentru această pagină."
                 },
                 "_showPageCompletion": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show page completion",
+                  "title": "Afișează completarea paginii",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "When enabled, the overall progress for this page will be calculated for all components. When disabled, only components that are set to be displayed in Page Level Progress will be included in the calculations. Defaults to enabled."
+                  "help": "Când este activat, progresul general pentru această pagină va fi calculat pentru toate componentele. Când este dezactivat, doar componentele setate să fie afișate în Progresul la Nivel de Pagină vor fi incluse în calcule. Implicit este activat."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show page completion indicator",
+                  "title": "Afișează indicatorul de completare al paginii",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the page title."
+                  "help": "Controlează dacă indicatorul de completare este afișat lângă titlul paginii."
                 },
                 "_excludeAssessments": {
                   "type": "boolean",
                   "required": false,
                   "default": false,
-                  "title": "Exclude assessments.",
+                  "title": "Exclude evaluările.",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the progress calculations will include assessments."
+                  "help": "Controlează dacă calculele de progres vor include evaluările."
                 }
               }
             }
@@ -240,25 +240,25 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progres la nivel de pagină",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Is enabled",
+                  "title": "Este activat",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is used on this article."
+                  "help": "Controlează dacă extensia Progres la Nivel de Pagină este utilizată pe acest articol."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show article completion indicator",
+                  "title": "Afișează indicatorul de completare al articolului",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the article title."
+                  "help": "Controlează dacă indicatorul de completare este afișat lângă titlul articolului."
                 }
               }
             }
@@ -270,25 +270,25 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progres la nivel de pagină",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Is enabled",
+                  "title": "Este activat",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is used on this block."
+                  "help": "Controlează dacă extensia Progres la Nivel de Pagină este utilizată pe acest bloc."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show block completion indicator",
+                  "title": "Afișează indicatorul de completare al blocului",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the block title."
+                  "help": "Controlează dacă indicatorul de completare este afișat lângă titlul blocului."
                 }
               }
             }
@@ -300,25 +300,25 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progres la nivel de pagină",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Este activat",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether this component should be displayed in the Page Level Progress extension or not."
+                  "help": "Controlează dacă această componentă ar trebui să fie afișată în extensia Progres la Nivel de Pagină sau nu."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show component completion indicator",
+                  "title": "Afișează indicatorul de completare al componentei",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the component title."
+                  "help": "Controlează dacă indicatorul de completare este afișat lângă titlul componentei."
                 }
               }
             }
